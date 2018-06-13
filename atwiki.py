@@ -1,17 +1,19 @@
-# atwikiの更新通知機能
-# launchd を使った自動通知機能までできた
+# -*- coding: utf-8 -*-
+#トークン: kUbiMgwQ7XSioEh3Fh7g3Q7kfA181N6kOrkzZpB7HK7
+# exception NoSuchElementException
+
 import time
 import datetime
 import sys
 import requests
-user = "ここにユーザー名を入れる"
-passward = "ここにパスワードを入れる"
+user = "44murakami"
+passward = "paopao634"
 date_now = datetime.datetime.now()
 date = date_now.strftime('%Y-%m-%d')
 
 
 def line(mes):
-    line_notify_token = 'ここにトークンを入れる'
+    line_notify_token = 'kUbiMgwQ7XSioEh3Fh7g3Q7kfA181N6kOrkzZpB7HK7'
     line_notify_api = 'https://notify-api.line.me/api/notify'
     #変数messageに文字列をいれて送信。 トークン名の隣に文字が来てしまうので最初に改行
     message = '\n' + mes

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- label -->
+  <key>Label</key>
+  <string>pl.atwiki.python</string>
+
+  <!-- script -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/murakaminaoki/anaconda3/bin/python</string>
+    <string>/Users/murakaminaoki/git/atwiki/atwiki.py</string>
+  </array>
+
+  <!-- launchctl loadしたタイミングで実行するか -->
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- インターバル指定(例:30秒毎) -->
+  <!--
+  <key>StartInterval</key>
+  <integer>30</integer>
+  -->
+
+  <!-- カレンダー指定(例:毎日10時30分に実行) -->
+  <key>StartCalendarInterval</key>
+  <array>
+      <dict>
+          <key>Minute</key>
+          <integer>0</integer>
+          <key>Hour</key>
+          <integer>9</integer>
+      </dict>
+      <dict>
+          <key>Minute</key>
+          <integer>0</integer>
+          <key>Hour</key>
+          <integer>18</integer>
+      </dict>
+  </array>
+
+
+  <!-- ログの指定 -->
+  <key>StandardErrorPath</key>
+  <string>/Users/murakaminaoki/git/atwiki/err.log</string>
+  <key>StandardOutPath</key>
+  <string>/Users/murakaminaoki/git/atwiki/log.log</string>
+  <!-- ログを出さない場合は/dev/null -->
+  <!--
+  <key>StandardErrorPath</key>
+  <string>/dev/null</string>
+  <key>StandardOutPath</key>
+  <string>/dev/null</string>
+  -->
+</dict>
+</plist>

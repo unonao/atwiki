@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-#トークン: kUbiMgwQ7XSioEh3Fh7g3Q7kfA181N6kOrkzZpB7HK7
-# exception NoSuchElementException
-
+#atwikiの更新通知機能
+#launchd,cronなどを使えば、定時実行が可能
 import time
 import datetime
 import sys
@@ -63,10 +61,10 @@ driver.quit()
 #前回の結果を読み込む
 with open("/Users/murakaminaoki/git/atwiki/text.txt", encoding="utf-8") as f:
     lines = f.read()
-    #前回の結果と同じなら処理終了
+#前回の結果と同じなら処理終了
 if lines == his:
     sys.exit()
-    #前回の結果と違うなら、ファイルを上書き
+#前回の結果と違うなら、ファイルを上書き
 else:
     with open("/Users/murakaminaoki/git/atwiki/text.txt", "w", encoding="utf-8") as f:
         f.write(his)

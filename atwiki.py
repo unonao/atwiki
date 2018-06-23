@@ -6,8 +6,6 @@ import sys
 import requests
 user = "44murakami"
 passward = "paopao634"
-date_now = datetime.datetime.now()
-date = date_now.strftime('%Y-%m-%d')
 
 
 def line(mes):
@@ -37,16 +35,22 @@ try:
     time.sleep(10)
     day =  driver.find_elements_by_class_name("plugin_recent_day")
     cont =  driver.find_elements_by_class_name("plugin_recent_day_div")
-    #recent = driver.find_element_by_class_name("atwiki_plugin_recent_25a1b13fb87d062d43bd6fe2d4a85a7d").text
+    recent = driver.find_element_by_class_name("atwiki_plugin_recent_25a1b13fb87d062d43bd6fe2d4a85a7d").text
 except:
-    print("例外が発生しました（ネットワークに繋がっているかご確認ください")
+    print("例外が発生しました（ネットワークに繋がっているかご確認ください）")
     sys.exit()
 
 #文字列処理（過去2日分の更新情報を通知)
+date_now = datetime.datetime.now()
 his = 'updated!\n'
 for i in range(2):
+    tdate_now = datetime.datetime.strptime(day[i].text, '%Y-%m-%d')
     his += '\n'
     his += day[i].text
+    if date_now.day == tdate_now.day and date_now.month == tdate_now.month :
+        his += "(本日)"
+    else:
+        his += "("+str((date_now-tdate_now).days)+"日前)"
     his += '\n'
     his += cont[i].text
     his += '\n'
@@ -62,10 +66,15 @@ driver.quit()
 with open("/Users/murakaminaoki/git/atwiki/text.txt", encoding="utf-8") as f:
     lines = f.read()
 #前回の結果と同じなら処理終了
-if lines == his:
+if lines == recent:
+    date = date_now.strftime('%Y-%m-%d %H:%M')
+    com = date + "現在" + "\n更新はありませんでした"
+    line(com)
+    #print(com)
     sys.exit()
 #前回の結果と違うなら、ファイルを上書き
 else:
     with open("/Users/murakaminaoki/git/atwiki/text.txt", "w", encoding="utf-8") as f:
-        f.write(his)
-line(his)
+        f.write(recent)
+    line(his)
+    #print(his)

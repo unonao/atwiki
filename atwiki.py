@@ -137,13 +137,17 @@ try:
         date = date_now.strftime('%Y-%m-%d %H:%M')
         com = date + "現在" + "\n更新はありませんでした"
         line_me(com)
-        print("\n" + com)
+        print("\n\n" + "*"*5)
+        print("\n" + com + "\n")
+        print("*"*5 + "\n")
     #前回の結果と違うなら、ファイルを上書き
     else:
         with open("/home/ubuntu/work/atwiki/text.txt", "w", encoding="utf-8") as f:
             f.write(recent)
         line(his)
+        print("\n\n" + "*"*5)
         print("\n" + his)
+        print("*"*5 + "\n")
 
     print("\n実行完了")
 

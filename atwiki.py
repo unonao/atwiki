@@ -76,7 +76,7 @@ def line_me(mes):
     エラー用通知関数
     lineで自分に連絡
     """
-    line_notify_token = 'gWfhRR6ezF8Qa6nzgNiQf7dzjPe70I6nwSsXP96tX8I'
+    line_notify_token = '1NS7LLBpds6tZRmSEIlBH0m5YhQ3aUQit9nfJd6KveW'
     line_notify_api = 'https://notify-api.line.me/api/notify'
     #変数messageに文字列をいれて送信。 トークン名の隣に文字が来てしまうので最初に改行
     message = '\n' + mes
@@ -128,7 +128,6 @@ try:
     driver.find_element_by_link_text("ログアウト").click()
     time.sleep(5)
     print("ログアウト完了")
-    driver.quit()
 
     #前回の結果を読み込む
     with open("/home/ubuntu/work/atwiki/text.txt", encoding="utf-8") as f:
@@ -137,9 +136,8 @@ try:
     if lines == recent:
         date = date_now.strftime('%Y-%m-%d %H:%M')
         com = date + "現在" + "\n更新はありませんでした"
-        #line(com)
+        line_me(com)
         print("\n" + com)
-        sys.exit()
     #前回の結果と違うなら、ファイルを上書き
     else:
         with open("/home/ubuntu/work/atwiki/text.txt", "w", encoding="utf-8") as f:
@@ -147,19 +145,22 @@ try:
         line(his)
         print("\n" + his)
 
+    print("\n実行完了")
+
 # 待機時間が短すぎるとdriverの要素が見つけられなくて（ロードできなくて）エラーになる
 except TimeoutException:
-    line_me("\nタイムアウトエラーが発生しました。")
-    line("\nタイムアウトエラーが発生しました。")
     print("\nタイムアウトエラーが発生しました。")
-    driver.quit()
-    sys.exit()
+    line("\nタイムアウトエラーが発生しました。")
+    line_me("\nタイムアウトエラーが発生しました。")
 
 # その他例外が発生したら通知
 except Exception as e :
-    line("エラーが発生しました。")
     print("エラーが発生しました。")
-    line_me("不明なエラー\n"+e)
-    print(e)
+    print(str(e))
+    line("エラーが発生しました。")
+    line_me("不明なエラー\n"+str(e))
+
+finally:
     driver.quit()
     sys.exit()
+    

@@ -50,6 +50,7 @@ import time
 import datetime
 import sys
 import requests
+import os
 from selenium.common.exceptions import TimeoutException  # error用
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.keys import Keys
@@ -87,6 +88,9 @@ def line_me(mes):
 
 # 例外が生じた時に、自分に通知する
 try:
+    # 絶対パス取得
+    cwd = os.getcwd()
+    
     #webdriverを使ってスクレイピング
     options = ChromeOptions()
     # ヘッドレスモードを有効にする（次driver = Chrome(executable_path='/chromedriver' ,options=options)の行をコメントアウトすると画面が表示される）
@@ -94,7 +98,7 @@ try:
     # no sandbox で実行しないとcronが使えなかった
     options.add_argument('--no-sandbox')
     # ChromeのWebDriverオブジェクトを作成する
-    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+    driver = Chrome(executable_path=os.path.join(cwd, "chromedriver"), chrome_options=options)
     # 指定した待ち時間の間、要素が見つかるまで(ロードされるまで)待機するように設定。短いとTimeoutExceptionになった。
     driver.implicitly_wait(10)
     # atwikiのログインページなどはurlの直接入力で表示されないようになっているので、別のページからseleniumでログインページへ遷移する必要がある。
@@ -104,7 +108,7 @@ try:
     driver.find_element_by_name("user").send_keys(user)
     driver.find_element_by_name("pass").send_keys(passward)
     driver.find_element_by_name("pass").submit()
-    time.sleep(5)
+    time.sleep(5) #要らない気がする...
     print("ログイン完了")
     day =  driver.find_elements_by_class_name("plugin_recent_day")
     cont =  driver.find_elements_by_class_name("plugin_recent_day_div")
@@ -130,7 +134,7 @@ try:
     print("ログアウト完了")
 
     #前回の結果を読み込む
-    with open("/home/ubuntu/work/atwiki/text.txt", encoding="utf-8") as f:
+    with open(os.path.join(cwd, "text.txt"), encoding="utf-8") as f:
         lines = f.read()
     #前回の結果と同じなら処理終了
     if lines == recent:
@@ -142,7 +146,7 @@ try:
         print("*"*5 + "\n")
     #前回の結果と違うなら、ファイルを上書き
     else:
-        with open("/home/ubuntu/work/atwiki/text.txt", "w", encoding="utf-8") as f:
+        with open(os.path.join(cwd, "text.txt"), "w", encoding="utf-8") as f:
             f.write(recent)
         line_me(his)
         print("\n\n" + "*"*5)

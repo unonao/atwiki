@@ -1,0 +1,374 @@
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/bin/chromedriver': '/home/ubuntu/bin/chromedriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 97, in <module>
+    driver = Chrome(executable_path='/home/ubuntu/bin/chromedriver' ,chrome_options=options)
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/murakaminaoki/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 158, in <module>
+    print("\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-10: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/murakaminaoki/git/atwiki/atwiki.py", line 164, in <module>
+    driver.quit()
+NameError: name 'driver' is not defined

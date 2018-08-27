@@ -149,7 +149,7 @@ try:
         print("\n" + his)
         print("*"*5 + "\n")
 
-    print("\n実行完了")
+    print("\n実行完了\n")
 
 # 待機時間が短すぎるとdriverの要素が見つけられなくて（ロードできなくて）エラーになる
 except TimeoutException:
